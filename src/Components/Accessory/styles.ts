@@ -9,7 +9,7 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
 
-  background-color: ${theme.colors.background_secondary};
+  background-color: ${theme.colors.shape};
 
   padding: 16px;
   margin-bottom: 8px;

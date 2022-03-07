@@ -12,7 +12,7 @@ export function Home() {
     name: "RS 5 Coupé",
     rent: {
       period: "AO DIA",
-      price: 120,
+      price: 180,
     },
     thumbnail:
       "https://w7.pngwing.com/pngs/833/338/png-transparent-audi-rs5-car-audi-q5-audi-s5-audi-convertible-car-performance-car.png",

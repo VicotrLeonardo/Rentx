@@ -1,8 +1,5 @@
 import React from "react";
-
-import { Accessory } from "../../Components/Accessory";
-import { BackButton } from "../../Components/BackButton";
-import { ImageSlider } from "../../Components/ImageSlider";
+import { Feather } from "@expo/vector-icons";
 
 import speedSvg from "../../assets/speed.svg";
 import accelerationSvg from "../../assets/acceleration.svg";
@@ -23,13 +20,28 @@ import {
   Rent,
   Period,
   Price,
-  About,
   Acessories,
   Footer,
+  RentalPeriod,
+  CalendarIcon,
+  DateInfo,
+  DateTitle,
+  DateValue,
+  RentalPrice,
+  RentalPriceLabel,
+  RentalPriceDetails,
+  RentalPriceQuota,
+  RentalPriceTotal,
 } from "./styles";
-import { Button } from "../../Components/Button";
 
-export function CarDetails() {
+import { Accessory } from "../../Components/Accessory";
+import { BackButton } from "../../Components/BackButton";
+import { ImageSlider } from "../../Components/ImageSlider";
+import { Button } from "../../Components/Button";
+import theme from "../../styles/theme";
+import { RFValue } from "react-native-responsive-fontsize";
+
+export function SchedulingDetails() {
   return (
     <Container>
       <Header>
@@ -64,12 +76,45 @@ export function CarDetails() {
           <Accessory name="Auto" icon={exchangeSvg} />
           <Accessory name="2 pessoas" icon={peopleSvg} />
         </Acessories>
-        <About></About>
 
-        <Footer>
-          <Button title="Confirmar" />
-        </Footer>
+        <RentalPeriod>
+          <CalendarIcon>
+            <Feather
+              name="calendar"
+              size={RFValue(24)}
+              color={theme.colors.shape}
+            />
+          </CalendarIcon>
+
+          <DateInfo>
+            <DateTitle>DE</DateTitle>
+            <DateValue>07/03/2022</DateValue>
+          </DateInfo>
+
+          <Feather
+            name="chevron-right"
+            size={RFValue(10)}
+            color={theme.colors.text}
+          />
+
+          <DateInfo>
+            <DateTitle>ATÉ</DateTitle>
+            <DateValue>07/03/2022</DateValue>
+          </DateInfo>
+        </RentalPeriod>
+
+        <RentalPrice>
+          <RentalPriceLabel>Total</RentalPriceLabel>
+          <RentalPriceDetails>
+            <RentalPriceQuota>R$ 580 X3 diárias</RentalPriceQuota>
+            <RentalPriceTotal>R$ 2.900</RentalPriceTotal>
+          </RentalPriceDetails>
+        </RentalPrice>
       </Content>
+
+      <Footer>
+        <Button title="Alugar Agora" color={theme.colors.sucess} />
+      </Footer>
     </Container>
   );
 }

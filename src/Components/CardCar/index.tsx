@@ -37,7 +37,7 @@ export function CardCar({ data }: Props) {
         <About>
           <Rent>
             <Period>{data.rent.period}</Period>
-            <Price>`R$ ${data.rent.price}`</Price>
+            <Price>R$ {data.rent.price}</Price>
           </Rent>
           <Type>
             <GasolineSvg />
