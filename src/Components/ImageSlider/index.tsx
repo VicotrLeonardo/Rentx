@@ -27,3 +27,5 @@ export function ImageSlider({ imagesUrl }: Props) {
     </Container>
   );
 }
+
+// Math.floor(Math.random() * 3)

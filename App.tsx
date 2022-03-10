@@ -10,9 +10,7 @@ import {
   Archivo_600SemiBold,
 } from "@expo-google-fonts/archivo";
 import AppLoading from "expo-app-loading";
-
-import { SchedulingComplete } from "./src/screens/SchedulingComplete";
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -28,7 +26,7 @@ export default function App() {
 
   return (
     <>
-      <SchedulingComplete />
+      <Routes />
     </>
   );
 }

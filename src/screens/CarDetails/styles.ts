@@ -13,7 +13,7 @@ export const Header = styled.View`
   align-items: center;
 
   position: absolute;
-  margin-top: 18px;
+  margin-top: 20px;
   margin-left: 24px;
 `;
 
@@ -75,7 +75,7 @@ export const About = styled.Text`
   line-height: ${RFValue(25)}px;
 `;
 
-export const Acessories = styled.View`
+export const Accessories = styled.View`
   width: 100%;
 
   flex-direction: row;

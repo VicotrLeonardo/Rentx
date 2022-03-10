@@ -24,6 +24,12 @@ export const Message = styled.Text`
   color: ${theme.colors.text_detail};
   font-family: ${theme.fonts.primary_400};
   text-align: center;
-  margin-top: 15px;
+  margin-top: 16px;
   line-height: ${RFValue(25)}px;
+`;
+
+export const Footer = styled.View`
+  width: 100%;
+  align-items: center;
+  margin: 70px 0;
 `;
